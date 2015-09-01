@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- MENU ITEMS -->
+
+		<!-- top level menu: no parent -->
+		<menuitem id="main_veterinaria_menu" name="Veterinaria" />
+		<!-- A first level in the left side menu is needed before using action= 
+			attribute -->
+		<menuitem id="veterinaria_menu" name="Veterinaria" parent="main_veterinaria_menu" />
+		<!-- the following menuitem should appear *after* its parent veterinaria_menu 
+			and *after* its action pet_list_action -->
+		<menuitem id="pets_menu" name="Pets" parent="veterinaria_menu"
+			action="pet_list_action" />
+		<menuitem id="visits_menu" name="Visits" parent="veterinaria_menu"
+			action="visit_list_action" />
+
+	</data>
+</openerp>

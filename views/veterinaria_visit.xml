@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- VIEWS FOR THE VISIT CLASS -->
+		
+				
+		<record model="ir.ui.view" id="visit_tree">
+			<field name="name">visit_form_view</field>
+			<field name="model">veterinaria.visit</field>
+			<field name="arch" type="xml">
+			
+				<tree string="Visit">
+					<field name="date"/>
+					<field name="pet_id"/>	
+					<field name="operation"/>
+                    <field name="price"/>
+					<field name="result"/>
+					<field name="aftercares"/>
+				</tree>	
+			</field>
+		</record>
+		
+		
+		
+		<record model="ir.ui.view" id="visit_form">
+			<field name="name">visit_form_view</field>
+			<field name="model">veterinaria.visit</field>
+			<field name="arch" type="xml">
+	
+				<form string="Veterinaria" version="7.0">
+					<sheet>
+						<h1>
+							<field name="date" placeholder="Visit Date" />
+						</h1>
+						<group>
+							<field name="pet_id" placeholder="Pet Id" />
+							<field name="operation" placeholder="Operation" />
+							<field name="price" placeholder="Price" />
+							<field name="result" placeholder="Result" />
+							<field name="aftercares" placeholder="Aftercares" />
+						</group>
+
+					</sheet>
+				</form>
+			</field>
+		</record>		
+
+		<record id="visit_action" model="ir.actions.act_window">
+			<field name="name">Visits</field>
+			<field name="res_model">veterinaria.visit</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Create the first visit</p>
+			</field>
+			<field name="context">{'search_default_my_courses': 1}</field>
+		</record>	
+
+	
+		<!-- WINDOW ACTIONS -->
+
+		<record model="ir.actions.act_window" id="visit_list_action">
+			<field name="name">Visits</field>
+			<field name="res_model">veterinaria.pet</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">Create the first visit</p>
+			</field>
+		</record>		
+
+
+	</data>
+</openerp>
