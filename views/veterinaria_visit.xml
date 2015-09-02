@@ -3,8 +3,6 @@
 	<data>
 
 		<!-- VIEWS FOR THE VISIT CLASS -->
-		
-				
 		<record model="ir.ui.view" id="visit_tree">
 			<field name="name">visit_form_view</field>
 			<field name="model">veterinaria.visit</field>
