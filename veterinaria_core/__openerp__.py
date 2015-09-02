@@ -1,7 +1,7 @@
 # b-*- encoding: utf-8 -*-
 
 {
-    'name': 'Veterinaria',
+    'name': 'Veterinaria core',
     'version': '1.0',
     'author': 'Algios',
     'category': 'Education',
