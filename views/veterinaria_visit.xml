@@ -3,29 +3,30 @@
 	<data>
 
 		<!-- VIEWS FOR THE VISIT CLASS -->
+
 		<record model="ir.ui.view" id="visit_tree">
 			<field name="name">visit_form_view</field>
 			<field name="model">veterinaria.visit</field>
 			<field name="arch" type="xml">
-			
+
 				<tree string="Visit">
-					<field name="date"/>
-					<field name="pet_id"/>	
-					<field name="operation"/>
-                    <field name="price"/>
-					<field name="result"/>
-					<field name="aftercares"/>
-				</tree>	
+					<field name="date" />
+					<field name="pet_id" />
+					<field name="operation" />
+					<field name="price" />
+					<field name="result" />
+					<field name="aftercares" />
+				</tree>
 			</field>
 		</record>
-		
-		
-		
+
+
+
 		<record model="ir.ui.view" id="visit_form">
 			<field name="name">visit_form_view</field>
 			<field name="model">veterinaria.visit</field>
 			<field name="arch" type="xml">
-	
+
 				<form string="Veterinaria" version="7.0">
 					<sheet>
 						<h1>
@@ -42,7 +43,7 @@
 					</sheet>
 				</form>
 			</field>
-		</record>		
+		</record>
 
 		<record id="visit_action" model="ir.actions.act_window">
 			<field name="name">Visits</field>
@@ -52,9 +53,9 @@
 				<p class="oe_view_nocontent_create">Create the first visit</p>
 			</field>
 			<field name="context">{'search_default_my_courses': 1}</field>
-		</record>	
+		</record>
 
-	
+
 		<!-- WINDOW ACTIONS -->
 
 		<record model="ir.actions.act_window" id="visit_list_action">
@@ -65,7 +66,7 @@
 			<field name="help" type="html">
 				<p class="oe_view_nocontent_create">Create the first visit</p>
 			</field>
-		</record>		
+		</record>
 
 
 	</data>

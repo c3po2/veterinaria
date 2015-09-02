@@ -3,11 +3,12 @@
 	<data>
 
 		<!-- VIEWS FOR THE PET CLASS -->
+
 		<record model="ir.ui.view" id="pet_form">
 			<field name="name">pet_form_view</field>
 			<field name="model">veterinaria.pet</field>
 			<field name="arch" type="xml">
-	
+
 				<form string="Veterinaria" version="7.0">
 					<sheet>
 						<h1>
@@ -27,8 +28,8 @@
 					</sheet>
 				</form>
 			</field>
-	</record>
-	
+		</record>
+
 		<record id="pet_action" model="ir.actions.act_window">
 			<field name="name">Pets</field>
 			<field name="res_model">veterinaria.pet</field>
@@ -37,9 +38,9 @@
 				<p class="oe_view_nocontent_create">Create the first pet</p>
 			</field>
 			<field name="context">{'search_default_my_courses': 1}</field>
-		</record>	
+		</record>
 
-	
+
 		<!-- WINDOW ACTIONS -->
 
 		<record model="ir.actions.act_window" id="pet_list_action">
@@ -50,7 +51,7 @@
 			<field name="help" type="html">
 				<p class="oe_view_nocontent_create">Create the first pet</p>
 			</field>
-		</record>		
+		</record>
 
 
 	</data>
